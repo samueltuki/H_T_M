@@ -1,6 +1,13 @@
+/* most generic styles always stay on top */
+
 body {
   font-family: Arial;
   color: slategray;
+}
+
+#container {
+  width: 60%;
+  margin: auto;
 }
 
 h1 {
@@ -28,8 +35,11 @@ footer p {
   color: red;
 }
 
-#container{
-    width: 60%;
-    margin: auto;
+@media screen and (max-width: 768px) {
+  #container {
+    width: 90%;
+  }
+  h1{
+    font: size 200%;
+  }
 }
-
